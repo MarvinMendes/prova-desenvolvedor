@@ -1,14 +1,13 @@
 package com.marvin.provadesenvolvedor.domain.dto;
 
 import com.marvin.provadesenvolvedor.domain.enums.Tipo;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
-@AllArgsConstructor
-public class RequisicaoRegistroDTO {
+public class RequisicaoBuscaRegistroDTO {
 
 
     private String descricao;
@@ -19,5 +18,8 @@ public class RequisicaoRegistroDTO {
 
     private Tipo tipoRegistro;
 
+    private LocalDateTime dataInclusao;
+
+    private boolean ativo;
 
 }

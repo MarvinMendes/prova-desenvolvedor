@@ -1,6 +1,7 @@
 package com.marvin.provadesenvolvedor.service.mapper;
 
 import com.marvin.provadesenvolvedor.domain.Registro;
+import com.marvin.provadesenvolvedor.domain.dto.RequisicaoBuscaRegistroDTO;
 import com.marvin.provadesenvolvedor.domain.dto.RequisicaoRegistroDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -14,5 +15,8 @@ public abstract class RegistroMapper {
 
     public abstract RequisicaoRegistroDTO toDTO(Registro registro);
 
+    public abstract Registro toEntity(RequisicaoBuscaRegistroDTO dto);
+
+    public abstract RequisicaoBuscaRegistroDTO toDTOBusca(Registro registro);
 
 }

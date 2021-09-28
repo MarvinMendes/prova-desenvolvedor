@@ -41,4 +41,8 @@ public class Registro {
 
     private boolean ativo = true;
 
+    public boolean getAtivo() {
+        return this.ativo;
+    }
+
 }
