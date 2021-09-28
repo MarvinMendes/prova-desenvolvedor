@@ -15,7 +15,7 @@ public abstract class RegistroMapper {
 
     public abstract RequisicaoRegistroDTO toDTO(Registro registro);
 
-    public abstract Registro toEntity(RequisicaoBuscaRegistroDTO dto);
+   //public abstract Registro toEntity(RequisicaoBuscaRegistroDTO dto);
 
     public abstract RequisicaoBuscaRegistroDTO toDTOBusca(Registro registro);
 

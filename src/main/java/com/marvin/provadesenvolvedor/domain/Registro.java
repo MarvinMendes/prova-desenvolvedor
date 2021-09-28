@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Year;
 
 @Data
 @Entity
@@ -24,7 +25,7 @@ public class Registro {
     private String descricao;
 
     @Column(nullable = false)
-    private LocalDate anoPublicacao;
+    private Year anoPublicacao;
 
     @Column(nullable = false)
     private String autor;
